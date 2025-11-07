@@ -1,18 +1,25 @@
 package com.example;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
-@Slf4j
+@RequestMapping("/api")
 public class ControladorREST {
 
-    @GetMapping("/")
-    public String comienzo() {
-
-        log.info("Estoy ejecutando el controlador REST");
-        return "Mi primer Hola Mundo!!!";
+    @GetMapping("/hello")
+    public String saludar() {
+        return "Hola Mundo con REST en Spring Boot";
+    }
+    
+    @GetMapping("/hello2")
+    public String saludar2() {
+    	return "Hola Mundo con REST en Spring Boot";
+    }
+    
+    @GetMapping("/hello3")
+    public String saludar3() {
+    	return "Hola Mundo con REST en Spring Boot";
     }
 }
