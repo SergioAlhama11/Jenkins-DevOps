@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloWorldController {
 
+    // Metodo 1
     @GetMapping("/hello")
     public String saludar() {
         return "Hola Mundo con REST en Spring Boot";
