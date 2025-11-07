@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+// Tests para la clase ControladorRest
 public class ControladorRESTTest {
 	
 	private ControladorREST controlador;
