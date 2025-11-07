@@ -1,0 +1,35 @@
+package com.example;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class ControladorRESTTest {
+	
+	private ControladorREST controlador;
+
+    @BeforeEach
+    void setUp() {
+        controlador = new ControladorREST();
+    }
+
+    @Test
+    void testSaludar() {
+        String resultado = controlador.saludar();
+        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+    }
+
+    @Test
+    void testSaludar2() {
+        String resultado = controlador.saludar2();
+        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+    }
+
+    @Test
+    void testSaludar3() {
+        String resultado = controlador.saludar3();
+        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+    }
+
+}
