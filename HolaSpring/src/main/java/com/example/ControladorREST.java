@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class HelloWorldController {
+public class ControladorREST {
 
     // Metodo 1
     @GetMapping("/hello")
@@ -20,6 +20,7 @@ public class HelloWorldController {
     	return "Hola Mundo con REST en Spring Boot";
     }
     
+    // Metodo 3
     @GetMapping("/hello3")
     public String saludar3() {
     	return "Hola Mundo con REST en Spring Boot";
