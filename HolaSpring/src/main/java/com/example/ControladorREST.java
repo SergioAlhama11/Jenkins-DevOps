@@ -8,25 +8,28 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class ControladorREST {
 	
-	private static final String MENSAJE = "Hola Mundo con REST en Spring Boot ";
+	private static final String MENSAJE1 = "Hola Mundo con REST en Spring Boot 1";
+	private static final String MENSAJE2 = "Hola Mundo con REST en Spring Boot 2";
+	private static final String MENSAJE3 = "Hola Mundo con REST en Spring Boot 3";
+	private static final String MENSAJE4 = "Hola Mundo con REST en Spring Boot 4";
 
     @GetMapping("/hello")
     public String saludar() {
-        return MENSAJE + "1";
+        return MENSAJE1;
     }
     
     @GetMapping("/hello2")
     public String saludar2() {
-    	return "Hola Mundo con REST en Spring Boot 2";
+    	return MENSAJE2;
     }
     
     @GetMapping("/hello3")
     public String saludar3() {
-    	return "Hola Mundo con REST en Spring Boot 3";
+    	return MENSAJE3;
     }
     
     @GetMapping("/hello4")
     public String saludar4() {
-    	return "Hola Mundo con REST en Spring Boot 4";
+    	return MENSAJE4;
     }
 }
