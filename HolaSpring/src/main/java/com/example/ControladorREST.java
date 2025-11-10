@@ -17,12 +17,12 @@ public class ControladorREST {
     
     @GetMapping("/hello2")
     public String saludar2() {
-    	return MENSAJE + "2";
+    	return "Hola Mundo con REST en Spring Boot 2";
     }
     
     @GetMapping("/hello3")
     public String saludar3() {
-    	return MENSAJE + "3";
+    	return "Hola Mundo con REST en Spring Boot 3";
     }
     
     @GetMapping("/hello4")

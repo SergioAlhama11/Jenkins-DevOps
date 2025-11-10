@@ -32,5 +32,11 @@ public class ControladorRESTTest {
         String resultado = controlador.saludar3();
         assertEquals("Hola Mundo con REST en Spring Boot 3", resultado);
     }
+    
+    @Test
+    void testSaludar4() {
+        String resultado = controlador.saludar4();
+        assertEquals("Hola Mundo con REST en Spring Boot 4", resultado);
+    }
 
 }
