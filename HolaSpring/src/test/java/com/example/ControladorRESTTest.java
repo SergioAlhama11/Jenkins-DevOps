@@ -18,19 +18,19 @@ public class ControladorRESTTest {
     @Test
     void testSaludar() {
         String resultado = controlador.saludar();
-        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+        assertEquals("Hola Mundo con REST en Spring Boot 1", resultado);
     }
 
     @Test
     void testSaludar2() {
         String resultado = controlador.saludar2();
-        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+        assertEquals("Hola Mundo con REST en Spring Boot 2", resultado);
     }
 
     @Test
     void testSaludar3() {
         String resultado = controlador.saludar3();
-        assertEquals("Hola Mundo con REST en Spring Boot", resultado);
+        assertEquals("Hola Mundo con REST en Spring Boot 3", resultado);
     }
 
 }
