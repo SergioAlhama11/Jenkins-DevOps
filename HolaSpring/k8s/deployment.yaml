@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hola-spring
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hola-spring
+  template:
+    metadata:
+      labels:
+        app: hola-spring
+    spec:
+      containers:
+        - name: hola-spring
+          image: sergioalhama/hola-spring-jenkins:latest
+          ports:
+            - containerPort: 9090
+      imagePullSecrets:
+        - name: regcred
